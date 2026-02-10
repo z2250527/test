@@ -150,6 +150,18 @@
       "automergeType": "pr",
       "automergeStrategy": "squash",
       "platformAutomerge": true
+    },
+    {
+      "description": "New Relic provider updates - Dev",
+      "matchDatasources": ["terraform-provider"],
+      "matchPackageNames": ["newrelic/newrelic"],
+      "matchFileNames": ["terraform/**/**.tf"],
+      "groupName": "New Relic Provider (Dev)",
+      "schedule": ["before 10am on Monday"],
+      "commitMessageTopic": "New Relic Provider (Dev)",
+      "commitMessageExtra": "to {{newVersion}}",
+      "prPriority": 8,
+      "labels": ["newrelic", "terraform"]
     }
   ],
   "lockFileMaintenance": {
