@@ -28,7 +28,8 @@
         "terraform-version"
       ],
       "matchFileNames": [
-        "environment/dev/**"
+        # "environment/dev/**"
+        "*"
       ],
       "groupName": "Terraform (Dev)",
       "schedule": [
